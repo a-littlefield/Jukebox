@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Jukebox</title>
+	<link rel="stylesheet" href="jukebox.css">
+</head>
+<body>
+	<button id='playPauseButton' type='button'>Play song</button>
+
+	<button id='stopMusic' type='button'>Stop music</button>
+	<audio id='song'>
+		<source src='Music/Decode.mp3'>
+	</audio>
+	<div>
+		<h5 id='list'></h5>
+		<p></p>
+	</div>
+	<h4 id='choose'>Choose a new song below!</h4>
+	<form>
+		<input id='changeSong' type='file' accept='audio/*'>
+	</form>
+
+	<script src='jukebox.js'></script>
+</body>
+</html>
